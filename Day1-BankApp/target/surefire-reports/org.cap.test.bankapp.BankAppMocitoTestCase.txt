@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.cap.test.bankapp.BankAppMocitoTestCase
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.178 sec <<< FAILURE! - in org.cap.test.bankapp.BankAppMocitoTestCase
+test_AddAccount_method(org.cap.test.bankapp.BankAppMocitoTestCase)  Time elapsed: 0.067 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+	at org.cap.test.bankapp.BankAppMocitoTestCase.setUp(BankAppMocitoTestCase.java:26)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1e397ed7
+	at org.cap.test.bankapp.BankAppMocitoTestCase.setUp(BankAppMocitoTestCase.java:26)
+
+test_deposit(org.cap.test.bankapp.BankAppMocitoTestCase)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at org.cap.test.bankapp.BankAppMocitoTestCase.setUp(BankAppMocitoTestCase.java:26)
+
+test_findAccountById(org.cap.test.bankapp.BankAppMocitoTestCase)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at org.cap.test.bankapp.BankAppMocitoTestCase.setUp(BankAppMocitoTestCase.java:26)
+
+test_withdraw(org.cap.test.bankapp.BankAppMocitoTestCase)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at org.cap.test.bankapp.BankAppMocitoTestCase.setUp(BankAppMocitoTestCase.java:26)
+
